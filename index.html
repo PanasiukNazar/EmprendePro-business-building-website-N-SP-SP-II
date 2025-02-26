@@ -705,13 +705,14 @@ CONTACT SECTION
                             <div class="section-title">
                                 <h2>Mantente en contacto</h2>
                             </div>
-                            <form action="#" method="post">
+                            <form action="thanks.html" method="get">
                                 <input
                                     name="name"
                                     type="text"
                                     class="form-control"
                                     id="name"
                                     placeholder="Nombre"
+                                    required
                                 />
                                 <input
                                     style="margin-bottom: 0px"
@@ -720,25 +721,18 @@ CONTACT SECTION
                                     class="form-control"
                                     id="email"
                                     placeholder="Correo Electrónico"
+                                    required
                                 />
-                                <span
-                                    style="
-                                        display: block;
-                                        color: red;
-                                        padding: 6px 12px;
-                                    "
-                                    id="result"
-                                ></span>
                                 <textarea
                                     name="message"
                                     rows="5"
                                     class="form-control"
                                     id="message"
                                     placeholder="Mensaje"
+                                    required
                                 ></textarea>
                                 <div class="col-md-6 col-sm-10">
                                     <input
-                                        onclick="sendForm()"
                                         name="submit"
                                         type="submit"
                                         class="form-control"
@@ -884,7 +878,7 @@ CONTACT SECTION
         <script src="js/smoothscroll.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/custom.js"></script>
-        <script src="js/contact-form.js"></script>
+
         <script src="js/cookiebanner.js"></script>
     </body>
 </html>
